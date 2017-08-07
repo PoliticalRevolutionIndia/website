@@ -7,11 +7,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 
 import 'hammerjs';
+import { ViewsComponent } from './views/views.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ViewsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

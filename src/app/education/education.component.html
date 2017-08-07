@@ -1,0 +1,19 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+<md-list fxFlex>
+  <md-list-item *ngFor="let about of aboutus">
+    <img md-list-avatar src={{about.picture}} alt={{about.name}}>
+    <h1 md-line> {{about.name}} </h1>
+    <p md-line>
+      <span> {{about.summary}} </span>
+    </p>
+    <p md-line> <span> {{about.designation}}</span></p>
+
+    <a href={{about.facebook}}>Facebook</a>
+    <a href={{about.twitter}}>Twitter</a>
+  </md-list-item>
+</md-list>
+
+</div>
