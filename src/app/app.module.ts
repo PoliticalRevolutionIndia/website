@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { ViewsComponent } from './views/views.component';
 import { EducationComponent } from './education/education.component';
+import { DepartmentsComponent } from './departments/departments.component';
+import { DepartmentDetialComponent } from './department-detial/department-detial.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewsComponent,
-    EducationComponent
+    EducationComponent,
+    DepartmentsComponent,
+    DepartmentDetialComponent
   ],
   imports: [
     BrowserModule,

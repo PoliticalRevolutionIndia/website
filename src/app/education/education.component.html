@@ -3,7 +3,7 @@
      fxLayoutGap="10px">
 
 <md-list fxFlex>
-  <md-list-item *ngFor="let about of aboutus">
+  <md-list-item *ngFor="let about of peoples">
     <img md-list-avatar src={{about.picture}} alt={{about.name}}>
     <h1 md-line> {{about.name}} </h1>
     <p md-line>
@@ -11,8 +11,12 @@
     </p>
     <p md-line> <span> {{about.designation}}</span></p>
 
-    <a href={{about.facebook}}>Facebook</a>
+    <p md-line>
+      <a href={{about.facebook}}>Facebook</a>
+    </p>
+    <p md-line>
     <a href={{about.twitter}}>Twitter</a>
+  </p>
   </md-list-item>
 </md-list>
 

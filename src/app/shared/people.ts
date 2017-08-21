@@ -1,4 +1,4 @@
-export class AboutUs {
+ export class People {
   name : string;
   summary : string;
   facebook : string;
