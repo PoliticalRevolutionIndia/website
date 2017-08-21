@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Department } from "../shared/department";
-import { DEPARTMENTS } from "../shared/departments"; 
 
+import { DepartmentService } from "../services/department.service"
 @Component({
   selector: 'app-departments',
   templateUrl: './departments.component.html',
@@ -9,11 +9,12 @@ import { DEPARTMENTS } from "../shared/departments";
 })
 export class DepartmentsComponent implements OnInit {
 
-  departments : Department[] = DEPARTMENTS;
-  selectedDepartment: Department = this.departments[0];
-  constructor() { }
+  departments : Department[];
+  selectedDepartment: Department;
+  constructor(private departmentService : DepartmentService ) { }
 
   ngOnInit() {
+    this.departments = this.departmentService.getDepartments();
   }
 
   onSelect(department : Department) {

@@ -12,6 +12,7 @@ import { EducationComponent } from './education/education.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { DepartmentDetialComponent } from './department-detial/department-detial.component';
 
+import { DepartmentService } from "./services/department.service";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { DepartmentDetialComponent } from './department-detial/department-detial
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [ 
+  DepartmentService, 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
